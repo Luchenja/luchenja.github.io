@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*.body-text {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 250px;
+
+}*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: teal;
+    font-family: "Montserrat", sans-serif;
+
+}
+.heading {
+    color: White;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+.nav-links li {
+    list-style: none;
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 14px 16px;
+
+}
+.nav-linksa:hover:not(.active){
+    background-color: lightseagreen;
+
+}
+.nav-links li a:active{
+    background-color: #4caf50;
+}
+
+/*
+----------------------------------
+foooter section
+----------------------------------
+*/
+footer {
+    border: 2px solid;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 250px;
+    padding: 10px; 
+    background-color: #f1f1f1;
+
+    
+}
+.bottom  a{
+    font-family: "Montserrat", sans-serif;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+header{
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.contact-list li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact-info {
+    flex-grow: 1;
+}
+
+.h1 {
+    text-align: center;
+    color: #333;
+}
+
+.animatedPicture {
+    position: absolute;
+    left: 0;
+    transition: left 5s ease;
+    top: 50%;
+    transform: translateY(-50);
+    animation: moveRightToLeft 5s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+    0% {left: 100%; }
+    100% {left: -100%;}
+}
+.image-container {
+  display: flex;
+}
+
+img {
+  width: 300px;; /* Set your desired width */
+  height: auto;
+}
