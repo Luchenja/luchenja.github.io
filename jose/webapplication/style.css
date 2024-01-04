@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+.main-container{
+    margin-top: 90px;
+    height: 50vh;
+
+}
+.profile-container{
+background-color:grey;
+height: 45vh;
+padding: 30px 30px 30px 30px;
+margin-left: 20px;
+width: 80%;
+margin-left: 10%;
+}
+.profile-body{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 2rem;
+}
+.profile-info{
+    background-color: blanchedalmond;
+    height: 40vh;
+    margin-top: 10px;
+    box-shadow: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.profile-details{
+    background-color: blanchedalmond;
+    height: 40vh;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.img{
+    margin-left: 25%;  
+    padding-bottom: 20px; 
+}
+.img img{
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
+}
+.paragraph{
+    margin-left: 30%;
+    padding: 5px 5px 5px 5px;
+}
+.details-heading{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
