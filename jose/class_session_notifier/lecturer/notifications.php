@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="dashboard-container" id="dashboard">
-    <div class="dashboard-small">
+        <div class="dashboard-small">
             <div class="dashboard-img">
                 <img src="../img/profile.png" alt="profile"  id="img">
             </div>
@@ -16,7 +16,7 @@
                 <b><a href="personal.php" >Personal Information</a></b>
             </div>
             <div class="contact-saved extra" >
-                <b><a href="timetablenot.php">Time table</a></b>
+                <b><a href="timetablenot.php">Time table $ Notifications</a></b>
             </div>
             <div class="request extra" >
                 <b><a href="#">Log out</a></b>
@@ -30,7 +30,21 @@
                 <div class="heading-img">
                     <img src="../img/profile.png" alt="profile" style="height: 40px;">
                 </div>
+                <div class="dashboard-content">
 
+                <form action="../logics/send-notification.php"  method="post">
+                    <h4>Confirm your presence </h4>
+                    <label for="notification">Enter your message here</label>
+                    <textarea name="notification" id="notification" cols="30" rows="10"></textarea>
+
+                    <p>Not available today ? leave a text here</p>
+
+                    <label for="response"></label>
+                    <textarea name="response" id="response" cols="30" rows="10"></textarea>
+
+                    <input type="submit" name="submit" value="confirm">
+                </form>
+                </div>
             </div>
     
         </div>

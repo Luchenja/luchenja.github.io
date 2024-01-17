@@ -37,25 +37,35 @@
                     <img src="../img/profile.png" alt="profile" style="height: 40px;">
                 </div>
                 <div class="dashboard-content">
-                    <div class="container-color">
-                            <div class="personal-container">
-                                <div class="personal-heading">
-                                    <h2> Personal Account Information</h2>
-                                </div>
-                                    <hr>
-                                            <div class="contact-card">
-                                                <div class="contact-abouts">
-                                                    <p><b>NAME:</b></p>
-                                                    <p><b>PHONE:</b></p>
-                                                    <p><b>EMAIL:</b></p>
-                                                </div>
-                                                <div class="contact-img">
-                                                    <img src="../img/profile.png" alt="profile" style="height: 150px;">
-                                                </div>
-                                            </div>
-                                            
-                                    <hr>
-                            </div>
+                    <div class="view-container">
+                        <div class="view-head">
+                            <h2>Lecturers</h2>
+                        </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>SN</th>
+                                        <th>Full Name</th>
+                                        <th>Phone number</th>
+                                        <th>Email</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Joe Nestory</td>
+                                        <td>+255 628 152 209</td>
+                                        <td>joenestry16@gmail.com</td>
+                                        <td>
+                                            <a href="" style="color:#00bf8e;">View</a>
+                                            <a href="">Edit</a>
+                                            <a href="" style="color: red">Delete</a>
+                                        </td>
+                                                
+                                    </tr>
+                                </tbody>
+                            </table>
                     </div>
                 </div>
             </div>

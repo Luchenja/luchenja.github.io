@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Interface</title>
+    <style>
+        /* Styles remain the same as the previous example */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #f1f1f1;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Style for image display */
+        #timetable-image {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lecturer Interface</h1>
+</header>
+
+<nav>
+    <a href="#choose-courses">Choose Courses</a>
+    <a href="#view-timetable">View Timetable</a>
+    <a href="#view-admin-timetable">View Admin Timetable</a>
+</nav>
+
+<main>
+    <section id="choose-courses">
+        <h2>Choose Courses</h2>
+        <form action="/lecturer/choose-courses" method="post">
+            <!-- Dropdown for selecting courses -->
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <!-- Populate this dropdown with available courses from the database -->
+                <option value="101">Course 101</option>
+                <option value="102">Course 102</option>
+                <!-- Add more options dynamically based on available courses -->
+            </select>
+
+            <!-- Submit button -->
+            <input type="submit" value="Choose Courses">
+        </form>
+    </section>
+
+    <section id="view-timetable">
+        <h2>View Timetable</h2>
+        <!-- Display timetable for the selected course -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Room 101</td>
+                </tr>
+                <!-- Add more timetable entries dynamically based on the selected course -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="view-admin-timetable">
+        <h2>View Admin Timetable</h2>
+        <!-- Display admin-uploaded timetable as a JPEG image -->
+        <img id="timetable-image" src="path/to/admin-timetable.jpg" alt="Admin Timetable">
+    </section>
+</main>
+
+</body>
+</html>

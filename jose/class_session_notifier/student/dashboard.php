@@ -22,7 +22,7 @@
                 <b><a href="#">Application status</a></b>
             </div>
             <div class="request extra" >
-                <b><a href="#">Notifications</a></b>
+                <b><a href="notifications.php">Notifications</a></b>
             </div>
         </div>
         <div class="dashboard-large">

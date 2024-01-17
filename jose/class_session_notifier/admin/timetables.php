@@ -37,26 +37,21 @@
                     <img src="../img/profile.png" alt="profile" style="height: 40px;">
                 </div>
                 <div class="dashboard-content">
-                    <div class="container-color">
-                            <div class="personal-container">
-                                <div class="personal-heading">
-                                    <h2> Personal Account Information</h2>
-                                </div>
-                                    <hr>
-                                            <div class="contact-card">
-                                                <div class="contact-abouts">
-                                                    <p><b>NAME:</b></p>
-                                                    <p><b>PHONE:</b></p>
-                                                    <p><b>EMAIL:</b></p>
-                                                </div>
-                                                <div class="contact-img">
-                                                    <img src="../img/profile.png" alt="profile" style="height: 150px;">
-                                                </div>
-                                            </div>
-                                            
-                                    <hr>
-                            </div>
-                    </div>
+                     <div class="uploading-form">
+                        <form action="../logics/upload-timetable.php" method="POST" enctype="multipart/form-data">
+
+                            <label for="courseID">Select Course:</label>
+                            <select id="courseID" name="courseID" required>
+                                <option value="1">IT</option>
+                                <option value="2">COE</option>
+                                <option value="2">MECHANICAL</option>
+                                <!-- Add more options as needed -->
+                            </select><br><br>
+                            <label for="image">Select a file:</label>
+                            <input type="file" id="image" name="image" accept="image/*" required>
+                            <input type="submit" value="Upload Timetable"> 
+                        </form>
+                     </div>
                 </div>
             </div>
     
